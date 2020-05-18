@@ -152,6 +152,9 @@ body {
     #gallery.row img {
         width: 100%!important;
     }
+    p.float-right a {
+        margin-left: 4rem;
+    }
 }
 
 @media(min-width: 992px) {
