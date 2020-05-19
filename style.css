@@ -3,12 +3,11 @@
 
 body {
     background-color: whitesmoke;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    height: 100vh;
+    width: 100vw;
 }
-
-.container {
-    margin-top: 5rem auto;
+.container{
+    margin-top: 5rem;
 }
 
 .sizing {
@@ -47,13 +46,19 @@ body {
     z-index: 10;
 }
 
-
-
 /* Declare heights because of positioning of img element */
 
+.carousel-item {
+    height: 32rem;
+}
+
 .carousel-item>img {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+    min-height: 32rem;
 }
 
 .carousel p {
@@ -147,13 +152,6 @@ body {
     #gallery.row img {
         width: 100%!important;
     }
-    p.float-right a {
-        margin-left: 4rem;
-    }
-    .carousel-caption{
-        display: none;
-    }
-    
 }
 
 @media(min-width: 992px) {

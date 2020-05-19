@@ -34,7 +34,7 @@ function addTodo(e) {
     const letters = /^[a-zA-ZğüşöçİĞÜŞÖÇ]+$/;
     const phoneNo = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
     const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    const passwformat = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,16}$/;
+    const passwformat = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}$/;
     //date için
     const dateformat = /^\(?([0-9]{4})\)?[-. ]?([0-9]{2})[-. ]?([0-9]{2})$/;
     let dateArray = date.split('-');
